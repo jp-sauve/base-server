@@ -7,9 +7,24 @@
   "author": "JP Sauve <jp@sauve.dev>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "start": "yarn run nodemon",
+    "nodemon": "nodemon --ext ts,json --ignore sessions/ ./index.ts"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "session-file-store": "^1.5.0"
+  },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
     "@types/bcryptjs": "^2.4.2",
+    "@types/dotenv": "^8.2.0",
     "@types/eslint": "^8.4.1",
     "@types/express": "^4.17.13",
     "@types/express-session": "^1.17.4",
@@ -21,17 +36,9 @@
     "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
     "prettier": "^2.6.0",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.2"
-  },
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "bcryptjs": "^2.4.3",
-    "express": "^4.17.3",
-    "express-session": "^1.17.2",
-    "passport": "^0.5.2",
-    "passport-local": "^1.0.0",
-    "session-file-store": "^1.5.0"
   }
 }
